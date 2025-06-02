@@ -1,3 +1,5 @@
+// Game Quiz: A simple quiz game where the computer randomly selects a question and answers it.
+// This code defines a set of questions, randomly selects one, and simulates the computer's choice and evaluation of the answer.
 function hiddenEmail(email) {
     const index = email.indexOf('@');
     user = email.slice(0, index);
