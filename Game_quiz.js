@@ -31,16 +31,19 @@ const questions = [
   }
 ];
 
+// Returns a random question from the questions array
 function getRandomQuestion(questions) {
   const randomIndex = Math.floor(Math.random() * questions.length);
   return questions[randomIndex];
 }
 
+// Returns a random choice from the provided choices array
 function getRandomComputerChoice(choices) {
   const randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 }
 
+// Checks if the computer's choice matches the correct answer
 function getResults(question, computerChoice) {
   if (computerChoice === question.answer) {
     return "The computer's choice is correct!";
