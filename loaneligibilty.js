@@ -1,3 +1,5 @@
+// Game Quiz: A simple quiz game where the computer randomly selects a question and answers it.
+// This code defines a set of questions, randomly selects one, and simulates the computer's choice and evaluation of the answer.
 const loanEligibility = (income, creditScore, debtToIncomeRatio) => {
   if (income < 30000) {
     return "Not eligible for a loan due to low income.";
