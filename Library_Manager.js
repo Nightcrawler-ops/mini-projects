@@ -94,14 +94,3 @@ console.log(totalPagesOfBooksInLibrary);
 // - The Creative Mindset: Mastering the Six Skills That Empower Innovation by Jeff DeGraff and Staney DeGraff (168 pages)
 // - Rich Dad Poor Dad by Robert Kiyosaki and Sharon Lechter (336 pages)
 // - Zero to Sold by Arvid Kahl (500 pages)
-// Book Summaries:
-// [
-//   'A book on how to plan ahead',
-//   'A practical book about discarding bad habits and building good ones',
-//   "A book that emphasizes the importance of identifying and understanding one's adversaries to succeed in the business world",
-//   'A book focusing on how to build an audience-driven business',
-//   'A book about effective ways to lead a coffee bean lifestyle',
-//   'A book on how to develop creativity and  innovation skills',
-//   'A book about financial literacy, financial independence, and building wealth. ',
-//   'A book on how to bootstrap a business',
-// ]
