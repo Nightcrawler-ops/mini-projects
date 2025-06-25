@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.gallery-item {
+    width: 150px; /* Fixed width for thumbnails */
+    height: 150px; /* Fixed height for thumbnails */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    border-color: #007bff; /* Highlight border on hover */
+}
+
+/* Lightbox container styles */
+.lightbox {
+    position: fixed; /* Stays in place relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with transparency */
+    display: none; /* Hidden by default, shown with JavaScript */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Stack image and button vertically */
+    z-index: 1000; /* Ensure it's on top of other content */
+    padding: 20px; /* Padding for mobile views */
+}
+
+/* Styles for the image inside the lightbox */
+#lightbox-image {
+    max-width: 90%; /* Max width relative to viewport */
+    max-height: 90%; /* Max height relative to viewport */
+    object-fit: contain; /* Ensures image fits within bounds without cropping */
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Styles for the close button */
+#close-btn {
+    position: absolute; /* Position relative to the lightbox container */
+    top: 50px;
+    right: 50px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem; /* Large 'X' */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#close-btn:hover {
+    background-color: rgba(219, 11, 11, 0.4);
+    transform: rotate(90deg); /* Little spin on hover */
+}
