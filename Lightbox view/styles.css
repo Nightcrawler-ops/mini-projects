@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 20px;
+    padding: 10px;
     max-width: 900px;
 }
 
@@ -65,11 +65,10 @@ body {
     background: none;
     border: none;
     color: #fff;
-    font-size: 0.9rem; /* Large 'X' */
+    font-size: 1rem; /* Large 'X' */
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
