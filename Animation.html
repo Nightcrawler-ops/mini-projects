@@ -1,0 +1,39 @@
+<div id="square"></div>
+
+<style>
+  #square {
+    width: 30px;
+    height: 30px;
+    /* rotate */
+    transform: rotate(90deg);
+    background: royalblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px 10px 5px 10px;
+  }
+</style>
+
+<script>
+  const square = document.querySelector('#square');
+  square.animate(
+    [
+      // rotate
+      { transform: 'rotate(180deg)' },
+      { transform: 'rotate(-180deg)' },
+      { transform: 'translateX(0px)' },
+      // { transform: 'rotate(90deg)' },
+      // change color
+      { background: 'royalblue' },
+      { background: 'red' },
+      { background: 'royalblue' },
+    ],
+    {
+      duration: 2000,
+      iterations: Infinity,
+      direction: 'alternate',
+      easing: 'ease-in-out',
+    }
+  );
+</script>
