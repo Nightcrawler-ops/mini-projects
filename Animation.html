@@ -17,13 +17,12 @@
 
 <script>
   const square = document.querySelector('#square');
-  square.animate(
+  const animation = square.animate(
     [
       // rotate
       { transform: 'rotate(180deg)' },
       { transform: 'rotate(-180deg)' },
       { transform: 'translateX(0px)' },
-      // { transform: 'rotate(90deg)' },
       // change color
       { background: 'royalblue' },
       { background: 'red' },
@@ -36,4 +35,13 @@
       easing: 'ease-in-out',
     }
   );
+
+  // Toggle play/pause on click
+  square.addEventListener('click', () => {
+    if (animation.playState === 'running') {
+      animation.pause();
+    } else {
+      animation.play();
+    }
+  });
 </script>
