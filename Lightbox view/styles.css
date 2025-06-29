@@ -76,3 +76,8 @@ body {
     background-color: rgba(219, 11, 11, 0.4);
     transform: rotate(90deg); /* Little spin on hover */
 }
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}

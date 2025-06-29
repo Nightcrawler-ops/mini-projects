@@ -85,3 +85,8 @@ h1 {
   display: none;
   margin: 20px auto;
 }
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}

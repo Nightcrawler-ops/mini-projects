@@ -73,3 +73,8 @@ h1 {
 .btn:hover {
     background-image: linear-gradient(var(--yellow), var(--dark-orange));
 }
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}

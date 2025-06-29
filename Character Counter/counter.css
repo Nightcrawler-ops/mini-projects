@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(240, 73, 51);
+    background-color: rgb(228, 187, 181);
     color: aqua;
 }
 
@@ -29,4 +29,10 @@ div {
 
 #char-count.red {
     color: red;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
 }
