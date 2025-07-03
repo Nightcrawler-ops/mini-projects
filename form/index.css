@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --primary-color: #007bff;
+    --primary-color-dark: #0056b3;
+    --primary-color-light: #66b2ff;
+    --secondary-color: #007bff;
+    --success-color: #fff;
+    --danger-color: #fd0000;
+    --warning-color: #66b2ff;
+    --info-color: #007bff;
+    --light-color: #66b2ff;
+    --dark-color: #0056b3;
+    --primary-white: #fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+}
+
+header {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px var(--primary-color-light);
+}
+
+header nav {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: var(--primary-color-dark);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 300px;
+    z-index: 2;
+    height: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    /* Remove margin-bottom to rely on gap */
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary-color-dark);
+    outline: var(--primary-color-light);
+}
+
+#loginButton, #registerButton {
+    background-color: var(--primary-color);
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#loginButton:hover, #registerButton:hover {
+    background-color: var(--primary-white);
+    color: var(--dark-color);
+    transform: scale(1.05);
+}
+
+.form-messages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+#welcomeMessage {
+    color: var(--success-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#errorMessage {
+    color: var(--danger-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
