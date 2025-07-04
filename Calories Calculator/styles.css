@@ -1,0 +1,102 @@
+:root {
+    /* Color variables for easy theme management */
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+}
+
+body {
+    /* Base font and background styling */
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: var(--fcc-blue);
+    color: var(--light-grey);
+}
+
+h1 {
+    /* Center the main heading */
+    text-align: center;
+}
+
+.container {
+    /* Responsive container width */
+    width: 90%;
+    max-width: 680px;
+}
+
+h1,
+.container,
+.output {
+    /* Common margin for main sections */
+    margin: 20px auto;
+}
+
+label,
+legend {
+    /* Bold labels and legends for emphasis */
+    font-weight: bold;
+}
+
+.input-container {
+    /* Stack input elements vertically */
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    /* Button styling */
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--light-yellow);
+    border: 2px solid var(--dark-yellow);
+}
+
+button,
+input,
+select {
+    /* Minimum height and text color for form elements */
+    min-height: 24px;
+    color: var(--dark-blue);
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+    /* Space below form elements */
+    margin-bottom: 10px;
+}
+
+.output {
+    /* Output box styling */
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+}
+
+.hide {
+    /* Utility class to hide elements */
+    display: none;
+}
+
+.output span {
+    /* Highlight output values */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.surplus {
+    /* Color for surplus values */
+    color: var(--light-pink);
+}
+
+.deficit {
+    /* Color for deficit values */
+    color: var(--light-green);
+}
