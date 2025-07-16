@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech</title>
+</head>
+<body>
+  <div class="container">
+    <input type="text" placeholder="Input text" id="input">
+    <button onclick="speakText()">Speak</button>
+  </div>
+
+  <script>
+    function speakText() {
+      const input = document.getElementById("input");
+      const utterance = new SpeechSynthesisUtterance(input.value);
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
